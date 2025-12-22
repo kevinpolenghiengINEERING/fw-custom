@@ -28,7 +28,7 @@ static void customBoardDefaultConfiguration() {
 	engineConfiguration->iat.adcChannel = EFI_ADC_7;
 
 
-    	 5.6k high side/10k low side = 1.56 ratio divider
+    	 //5.6k high side/10k low side = 1.56 ratio divider
     	engineConfiguration->analogInputDividerCoefficient = 1.56f;
 
     	// 6.34k high side/ 1k low side
@@ -40,7 +40,7 @@ static void customBoardDefaultConfiguration() {
 	//engineConfiguration->iat.config.bias_resistor = 2490;
 
 
-	 Battery sense on PA4
+	// Battery sense on PA4
 	engineConfiguration->vbattAdcChannel = EFI_ADC_4;
 }
 
